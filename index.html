@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>TechDOC Webpage</title>
+</head>
+<body>
+   
+    <div class="header">
+            <img src="Techdoc Logo.png" style="margin-top: 0;">
+            
+        <h1>TechDoc</h1>
+        
+ <!-- Drop down menu-->
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#home">Login</a>
+              <a href="#about">Register</a>
+            </div>
+        </div>
+          
+    </div>
+<!--Background-->
+    <div class="bgUnderHeader">
+
+<!-- Text on the top left circle-->
+    <div class="textTopLeft">
+        <h1>
+            About Us 
+        </h1>
+        <p style="font-size: 20px; position: relative; top: 100px; right: 200;"> TechDoc is a company that specializes </p>
+        <p style="font-size: 20px; position: relative; top: 78px; right: 222;">in tech support. With its own website and </p>
+        <p style="font-size: 20px; position: relative; top: 58px; right: 200;">community, we hope to provide a good </p>
+        <p style="font-size: 20px; position: relative; top: 38px; right: 200;">service to our customers through the</p>
+        <p style="font-size: 20px; position: relative; top: 19px; right: 190;">questions in our websites or thru </p>
+        <p style="font-size: 20px; position: relative; top: 0px; right: 157;">calling and asking questions.</p>
+    </div>
+
+<!-- Text on the middle right circle-->
+    <div class="textMiddleRight">
+        <h1>Why Us?</h1>
+        <p style="font-size: 20px; bottom: -110; left: 825; ">
+          &emsp;&emsp;&emsp;&emsp;Because we not only care for finding<br>
+          &emsp;&emsp;&emsp;solutions to your problems, but also in <br>
+          &emsp;&emsp;providing you with an excellent experience<br>
+          &emsp; while using our service. We at TechDoc face <br>
+          &emsp;&nbsp;each of our customers issues as if it is our <br>
+          &emsp;&emsp;&emsp;own, so we show genuine determintaion in<br>
+          &emsp;&emsp;&emsp;&emsp; resolving your troubles. Thus we<br>
+          &emsp;&emsp;&nbsp;encourage you to register now and be able<br>
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; to access our service. </p>
+    </div>
+
+<!-- Text on the bottom left circle-->
+    <div class="textBottomLeft">
+      <h1>Products and Services</h1>
+      <p style="top: 810px; left: 250;"> 
+        &emsp;&emsp;&emsp;We provide tech support on the following: <br>
+        &emsp;&emsp;&emsp;computer hardware, and computer software.<br>
+        &emsp;&ensp; Our staff is skillfully trained in order to<br>
+        &emsp;&emsp; solve various problems, and our manager’s<br>
+        &emsp;&nbsp; organizational skills are efficient in order<br>
+        &emsp;&emsp;&emsp;&emsp; to get you the services you need.
+        </p>
+    </div>
+    </div>
+    <div class="footer">
+        <pre style="color: aliceblue;">
+          Contact us: 09**-***-****
+                           tech.doc@gmail.com</pre>
+    </div>
+
+    <!-- script for the menu dropdown-->
+<script>
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+    window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>
